@@ -1,0 +1,27 @@
+Client Part 1 - FINAL run from my home server (Lenovo, Windows 10, i7-8650U) over WIRED Ethernet to the EC2 server in us-west-2
+Run at: 2026-10-13 21:40 local time
+Command: java -jar client-part1/target/client-part1.jar http://34.220.39.59:8080/skitrak 512
+
+===== Ingest =====
+Server: http://34.220.39.59:8080/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 17388 ms, 1840 swipes/s
+Main phase (512 threads): 21303 ms, 21968 swipes/s
+Total run time: 38691 ms
+Overall throughput: 12922 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 512 threads sending at once, 0 retries
+===== Leaderboard =====
+Resort 1: 79 updates, connect time 246 ms
+Resort 2: 78 updates, connect time 42 ms
+Resort 3: 78 updates, connect time 22 ms
+Resort 4: 78 updates, connect time 34 ms
+Resort 5: 78 updates, connect time 41 ms
+Resort 6: 78 updates, connect time 48 ms
+Resort 7: 78 updates, connect time 40 ms
+Resort 8: 78 updates, connect time 36 ms
+Resort 9: 78 updates, connect time 24 ms
+Resort 10: 78 updates, connect time 40 ms
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 57 ms
+Push latency: mean -130 ms, max 0 ms (781 updates)

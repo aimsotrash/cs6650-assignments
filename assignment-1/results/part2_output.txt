@@ -1,0 +1,53 @@
+Client Part 2 - FINAL run: m8azn.large client EC2 (a clone of my server; AMD EPYC 9R05, 2 cores at 5.0 GHz) in the same subnet as the server (us-west-2a), using the server's private IP
+Run at: 2026-10-15 16:36 PDT (the run in my screenshot)
+Command: java -jar client-part2.jar http://172.31.36.18:8080/skitrak 128 500000 results_final | tee part2_output.txt
+
+===== Ingest =====
+Server: http://172.31.36.18:8080/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 2154 ms, 14856 swipes/s
+Main phase (128 threads): 21960 ms, 21311 swipes/s
+Total run time: 24114 ms
+Overall throughput: 20734 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 128 connections open at once, 4985 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 49% busy on 2 cores, 46 us of CPU per swipe -> limit at 100% CPU about 43,193 swipes/s
+===== Ingest latency (ms) =====
+Requests: 500000
+Mean: 5.699
+Median: 5.418
+p95: 9.241
+p99: 13.681
+Min: 0.226
+Max: 103.878
+===== Throughput per resort =====
+Resort 1: 50003 swipes, 2073 swipes/s
+Resort 2: 50169 swipes, 2080 swipes/s
+Resort 3: 49599 swipes, 2056 swipes/s
+Resort 4: 49808 swipes, 2065 swipes/s
+Resort 5: 49974 swipes, 2072 swipes/s
+Resort 6: 50464 swipes, 2092 swipes/s
+Resort 7: 50162 swipes, 2080 swipes/s
+Resort 8: 50178 swipes, 2080 swipes/s
+Resort 9: 49831 swipes, 2066 swipes/s
+Resort 10: 49812 swipes, 2065 swipes/s
+===== Leaderboard =====
+Resort 1: 48 updates, connect time 79 ms
+Resort 2: 48 updates, connect time 9 ms
+Resort 3: 48 updates, connect time 17 ms
+Resort 4: 48 updates, connect time 6 ms
+Resort 5: 48 updates, connect time 4 ms
+Resort 6: 48 updates, connect time 5 ms
+Resort 7: 48 updates, connect time 4 ms
+Resort 8: 48 updates, connect time 6 ms
+Resort 9: 48 updates, connect time 2 ms
+Resort 10: 48 updates, connect time 4 ms
+Total leaderboard updates delivered: 480
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 13 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 1.59
+Median: 1
+p95: 3
+p99: 24
+Files: results_final/swipe_latencies.csv, results_final/throughput.csv, results_final/throughput.png

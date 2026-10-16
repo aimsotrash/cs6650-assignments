@@ -1,0 +1,28 @@
+Client Part 1 - FINAL run: m8azn.large client EC2 (a clone of my server; AMD EPYC 9R05, 2 cores at 5.0 GHz) in the same subnet as the server (us-west-2a), using the server's private IP
+Run at: 2026-10-15 16:34 PDT (the run in my screenshot)
+Command: java -jar client-part1.jar http://172.31.36.18:8080/skitrak 128 | tee part1_output.txt
+
+===== Ingest =====
+Server: http://172.31.36.18:8080/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 1941 ms, 16486 swipes/s
+Main phase (128 threads): 21131 ms, 22147 swipes/s
+Total run time: 23072 ms
+Overall throughput: 21671 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 128 connections open at once, 4976 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 53% busy on 2 cores, 48 us of CPU per swipe -> limit at 100% CPU about 41,804 swipes/s
+===== Leaderboard =====
+Resort 1: 47 updates, connect time 81 ms
+Resort 2: 47 updates, connect time 3 ms
+Resort 3: 47 updates, connect time 6 ms
+Resort 4: 47 updates, connect time 2 ms
+Resort 5: 47 updates, connect time 2 ms
+Resort 6: 47 updates, connect time 2 ms
+Resort 7: 47 updates, connect time 2 ms
+Resort 8: 47 updates, connect time 2 ms
+Resort 9: 47 updates, connect time 2 ms
+Resort 10: 47 updates, connect time 3 ms
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 10 ms
+Push latency: mean 1 ms, max 20 ms (470 updates)

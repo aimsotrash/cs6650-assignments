@@ -1,0 +1,18 @@
+# Build output
+target/
+out/
+
+# LaTeX build files (keep report.tex and report.pdf)
+report/*.aux
+report/*.log
+report/*.xdv
+report/*.out
+
+# IntelliJ
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+.~lock.*#

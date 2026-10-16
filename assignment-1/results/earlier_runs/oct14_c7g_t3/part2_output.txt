@@ -1,0 +1,52 @@
+Client Part 2 - FINAL run: c7g.large client EC2 (AWS Graviton3, 2 cores) in the same subnet as the server, using the server's private IP
+Run at: 2026-10-14 ~10:33 PDT
+Command: java -jar client-part2.jar http://172.31.36.18:8080/skitrak 32 500000 results
+
+===== Ingest =====
+Server: http://172.31.36.18:8080/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 5278 ms, 6062 swipes/s
+Main phase (32 threads): 35171 ms, 13306 swipes/s
+Total run time: 40449 ms
+Overall throughput: 12361 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 32 threads sending at once, 0 retries
+===== Ingest latency (ms) =====
+Requests: 500000
+Mean: 2.57
+Median: 2
+p95: 5
+p99: 10
+Min: 0
+Max: 169
+===== Throughput per resort =====
+Resort 1: 50063 swipes, 1237 swipes/s
+Resort 2: 50065 swipes, 1237 swipes/s
+Resort 3: 50033 swipes, 1236 swipes/s
+Resort 4: 50129 swipes, 1239 swipes/s
+Resort 5: 50057 swipes, 1237 swipes/s
+Resort 6: 50034 swipes, 1236 swipes/s
+Resort 7: 49886 swipes, 1233 swipes/s
+Resort 8: 49994 swipes, 1235 swipes/s
+Resort 9: 49911 swipes, 1233 swipes/s
+Resort 10: 49828 swipes, 1231 swipes/s
+===== Leaderboard =====
+Resort 1: 82 updates, connect time 176 ms
+Resort 2: 81 updates, connect time 8 ms
+Resort 3: 81 updates, connect time 8 ms
+Resort 4: 81 updates, connect time 8 ms
+Resort 5: 81 updates, connect time 4 ms
+Resort 6: 81 updates, connect time 4 ms
+Resort 7: 81 updates, connect time 4 ms
+Resort 8: 81 updates, connect time 4 ms
+Resort 9: 81 updates, connect time 6 ms
+Resort 10: 81 updates, connect time 4 ms
+Total leaderboard updates delivered: 811
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 22 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 2.23
+Median: 2
+p95: 6
+p99: 12
+Files: results/swipe_latencies.csv, results/throughput.csv, results/throughput.png

@@ -1,0 +1,153 @@
+Experiment: where should the load client run? (2026-10-13 and 2026-10-14, all against the same t3.micro Tomcat server in us-west-2a)
+
+Single swipe round trip (one kept-alive connection, 200 requests after a short warmup)
+  Home server (Lenovo, Wi-Fi) -> EC2 public IP mean 19-20 ms, median 18-19 ms
+  Client EC2 (same subnet) -> server private IP mean 0.33 ms, median 0.31 ms
+  On the server itself -> localhost             mean 0.26 ms, median 0.23 ms
+
+Full runs (500,000 swipes, 0 failed in every run)
+  Setup                          Main threads  Warmup/s  Main phase/s  Overall/s  Push latency mean
+  Home server (Wi-Fi) -> EC2     512           1,605     19,014        11,226     -54 ms (home server clock drift)
+  Client EC2 t3.micro -> server  64            4,100     7,804         7,378      3.2 ms (both clocks synced)
+  On the server (localhost)      32            3,031     5,816         5,493      3 ms
+  On the server (localhost)      64            2,900     5,269         5,007      3 ms
+
+Client EC2 thread tuning (200,000 swipes, main phase): 32 -> 5,935/s, 64 -> 7,379/s, 128 -> 6,270/s, 256 -> 5,725/s
+  client CPU 84-87% busy -> the t3.micro client CPU is the bottleneck
+Client EC2 in "standard" CPU credit mode (no credits yet): 654 swipes/s overall, CPU steal 68% (throttled)
+
+My laptop: Razer Blade 14 (Arch Linux, AMD Ryzen 9 5900HX 16 threads, wired Ethernet) -> EC2 public IP
+  single swipe round trip: mean 14.7-15.6 ms, median 14.3-16.1 ms
+  500,000 swipes, 512 main threads: warmup 2,051/s, main phase 16,058/s, overall 11,174/s, 0 failed, 8 retries
+  during main phase: laptop CPU 66% idle, network upload 59 Mbit/s / download 57 Mbit/s
+  -> same overall throughput as the home server on Wi-Fi (11,226/s) -> home upload (~55-61 Mbit/s) is the ceiling
+Home server (Lenovo, i7-8650U, Wi-Fi) during a 512-thread main phase: CPU 67% busy, upload 52.6 Mbit/s, download 53.9 Mbit/s
+Server (t3.micro) during that main phase: user 39%, system 26%, idle 33%
+
+Home server (Lenovo) on WIRED Ethernet -> EC2 public IP (Wi-Fi off)
+  single swipe round trip: mean 15.6-15.9 ms, median 16.0 ms, p95 17.3-18.7 ms
+  500,000 swipes, 512 main threads: warmup 1,840/s (17.4 s), main phase 21,968/s (21.3 s), total 38.7 s, overall 12,922/s, 0 failed, 0 retries
+  during main phase: home server CPU 63%, upload 61.2 Mbit/s, download 62.7 Mbit/s -> home upload is still the limit
+  (output: earlier_runs/part1_home_wired_oct13.txt; the Wi-Fi run is earlier_runs/part1_home_wifi_oct13.txt)
+
+LAN experiments (no EC2, no internet: home server and laptop wired to the home router, 1 Gbit/s links)
+  round trip: home server -> laptop median 0.68 ms (mean 1.71, p95 11.7); laptop -> home server median 0.94 ms (mean 2.15, p95 9.8)
+  A) home server as client -> laptop as server (Tomcat 9.0.121, Java 21)
+     sweep 200,000 swipes main phase: 64 -> 27,722/s, 128 -> 25,617/s, 256 -> 23,509/s, 512 -> 23,118/s
+     full 500,000 @ 64 threads: warmup 8,572/s, main 32,383/s, total 18.2 s, overall 27,495/s, 0 failed
+     CPU during main phase: home server (client) 75% (busiest core 87%), laptop (server) 78% idle  -> client is the limit
+  B) laptop as client -> home server as server (Tomcat 9.0.121, Corretto 11)
+     sweep 200,000 swipes main phase: 64 -> 40,365/s, 128 -> 39,895/s, 256 -> 32,264/s, 512 -> 32,838/s
+     full 500,000 @ 64 threads: warmup 18,296/s, main 41,393/s, total 13.1 s, overall 38,299/s, 0 failed
+     CPU during main phase: home server (server) 81% (busiest core 94%), laptop (client) 56% idle  -> server is the limit
+  -> without the home upload limit, throughput goes 2.1-3.0x higher than the wired run (2.4-3.4x vs Wi-Fi) and the limit becomes the home server's CPU
+     (as client in A, as server in B). Ethernet traffic ~75-110 Mbit/s, far below the 1 Gbit/s links.
+
+Localhost run, machine CPU during the run: 32 threads -> user 59%, system 29%, idle 4%
+                                           64 threads -> user 57%, system 27%, idle 8%
+  -> client and Tomcat share the same 2 vCPUs, so the client slows the server down.
+     Lowest latency but lowest throughput, and it breaks the "server should never be the bottleneck" rule,
+     so it is not a valid result for the assignment.
+
+Laptop (Razer) re-test, 2026-10-13 ~22:41, wired, 512 threads -> EC2 (new IP after the lab restart), during a video call
+  round trip before the runs: median 37.6 ms (mean 38.3), much higher than the 15 ms from the first test
+  run 1: warmup 1,989/s, main 18,242/s, overall 11,979/s, 0 failed, 7 retries
+  run 2: warmup 1,226/s, main 14,998/s, overall  8,726/s, 0 failed, 4 retries
+  run 3: warmup 1,986/s, main 15,279/s, overall 10,698/s, 0 failed, 29 retries
+  push latency from the laptop: mean 6 ms (Linux clock synced with NTP, so no negative skew like on the home server)
+  -> slower and noisier than before (video call using the same upload), none beat the 12,922/s wired run
+
+Bigger client: c7g.large (AWS Graviton3, 2 real cores, 4 GiB) in the same subnet -> server private IP, 2026-10-13 ~23:00
+  (Learner Lab only allows up to *.large; on Intel/AMD a .large is 1 core with 2 hyperthreads, Graviton .large is 2 full cores)
+  round trip to the server private IP (curl, kept-alive): median 1.24 ms, mean 1.79 ms
+  thread sweep, 200,000 swipes (main phase): 32 -> 12,800/s, 64 -> 11,870/s, 128 -> 12,434/s, 256 -> 12,430/s
+  run 1, 500,000 swipes, 32 main threads: warmup 6,637/s (4.8 s), main 14,157/s (33.1 s), total 37.9 s, overall 13,200/s,
+     0 failed, 0 retries, push latency mean 2 ms, max 17 ms (both clocks synced)
+  server (t3.micro) CPU during run 1: user 43-46%, system 27-31%, idle 24-26%, steal 0-6%
+  run 2: warmup 6,369/s, main 13,968/s, overall 12,977/s, 0 failed, 0 retries
+  run 3: warmup 6,743/s (4.7 s), main 14,623/s (32.0 s), total 36.7 s, overall 13,605/s, 0 failed, 0 retries  <- fastest run with the server on EC2
+         (output: earlier_runs/part1_c7g_oct13.txt)
+  client (c7g.large) CPU during run 1: idle 1-12% in the main phase -> the client CPU is the limit again; server ~75% busy
+  same jar on Java 21 (Corretto 21) instead of 11: overall 12,774 / 12,645 / 12,568 swipes/s
+     (main phase about the same ~14,000/s, but warmup slower ~5,150/s vs ~6,600/s) -> Java 11 was faster here
+  -> the c7g.large client beats my home wired run (12,922/s) in all 3 runs. Cost about $0.10 (instance terminated after the test).
+
+===== 2026-10-14: final runs and re-tests (server restarted, new public IP 44.251.246.15, private IP still 172.31.36.18) =====
+Round trip of one swipe (Java, one kept-alive connection, 200 timed POSTs):
+  c7g.large client -> server private IP, after a 3,000-request warmup: mean 0.51 ms, median 0.49 ms, p95 0.65 ms
+  t3.micro client  -> server private IP, after a 3,000-request warmup: mean 0.61 ms, median 0.58 ms, p95 0.82 ms
+  (with only a 50-request warmup the same measurement gave about 1.2-1.3 ms -> the first requests are slower until the JIT compiles the code)
+  home server (Lenovo, wired) -> EC2 public IP: mean 26.9 ms, median 25.1 ms (two days earlier: 16 ms)
+  laptop (Razer, wired) -> EC2 public IP: median 16.4 ms
+
+c7g.large client, Part 1, 32 main threads (screenshots taken by me):
+  run 1: warmup 5,076/s (6.3 s), main 14,290/s (32.7 s), total 39.1 s, overall 12,803/s, 0 failed, 0 retries  <- FINAL Part 1 (part1_output.txt)
+  run 2: warmup 6,176/s, main 13,524/s, overall 12,567/s, 0 failed, 0 retries
+  run 3: warmup 5,897/s, main 13,422/s, overall 12,409/s, 0 failed, 0 retries
+  an earlier run that morning (no screenshot): warmup 5,778/s, main 13,750/s, overall 12,634/s
+  -> 12,409-12,803/s on 10/14 and 12,977-13,605/s on 10/13: the c7g gives about 12,400-13,600/s from run to run
+c7g.large client, Part 2, 32 main threads: overall 12,361/s, ingest latency mean 2.57 / median 2 / p95 5 / p99 10 ms (min 0, max 169),
+  push latency mean 2.23 / median 2 / p95 6 / p99 12 ms, 811 updates  <- FINAL Part 2 (part2_output.txt)
+  (an earlier Part 2 run that morning, no screenshot: overall 11,935/s)
+
+t3.micro client (free tier), 64 main threads:
+  Part 1: warmup 4,320/s, main 8,602/s, overall 8,089/s, 0 failed, 0 retries (part1_output_t3.txt)
+  Part 2: overall 8,247/s, ingest latency mean 7.23 / median 6 / p95 15 / p99 24 ms (min 0, max 236),
+          push latency mean 3.12 / median 2 / p95 9 / p99 27 ms, 1,210 updates, 1 retry (part2_output_t3.txt, t3/)
+  earlier runs that morning (no screenshot): Part 1 7,794/s, Part 2 8,161/s; on 10/13 Part 2 was 7,378/s (earlier_runs/)
+
+Home server (Lenovo) wired re-test, 512 threads: 11,246 / 11,434 / 11,573 swipes/s, 0 failed, 0-5 retries
+  push latency +634 to +636 ms -> the Windows clock had drifted again (clock skew, not real latency)
+  slower than 10/13 (12,922/s) because the round trip was 25 ms instead of 16 ms
+Laptop (Razer) wired re-test, 512 threads: 9,320 / 8,447 / 8,521, then after it woke from sleep 10,268 / 6,859 / 8,794 swipes/s
+  0 failed but 9-57 retries per run (the warmup drops from ~1,900/s to ~1,200/s when retries happen)
+  256 threads: 8,547/s (6 retries), 128 threads: 4,780/s (24 retries) -> fewer threads did not fix the retries
+  checked: only the Ethernet interface has a default route, rp_filter is loose, the link is 1 Gbit/s with 0 errors
+  -> I could not find the cause; the laptop's results are noisy, so I did not use them
+
+===== 2026-10-15: re-tests the day before the deadline (run by Claude Code on my instructions, see AI_USAGE.md) =====
+Server check: Tomcat 9.0.122 running, Corretto 11.0.32, 2 vCPUs, unlimited CPU credits, clock synced to Amazon Time Sync
+  (6 ns off). The deployed skitrak.war has the same bytecode as the server code in this repo (all 8 classes, web.xml, gson).
+HTTP connections: Tomcat's default maxKeepAliveRequests is 100, so it closes each kept-alive connection after 100 requests.
+  A 500,000-swipe run opens about 5,000 connections, at most one per sending thread at a time
+  (kernel TcpActiveOpens during a local run: 5,014, incl. 10 WebSockets).
+  Unlimited keep-alive (maxKeepAliveRequests="-1") on a local Tomcat: 19,496 / 20,738 vs 20,292 / 20,571 swipes/s with
+  the default -> no difference, so the server config stays default.
+
+Faster client instance, same code: clone of my server (AMI of the server instance) launched as an m8azn.large
+  (AMD EPYC 9R05, 2 real cores at 5.0 GHz) in the server's subnet, Tomcat stopped on it, Corretto 11
+  round trip to the server's private IP (3,000-request warmup, 200 timed POSTs): mean 0.31 ms, median 0.29 ms
+  my original code, 200,000 swipes: 32 threads -> 18,665/s overall (main 20,460, server 97% CPU)
+                                     64 threads -> 17,744/s (main 18,350, server 90%)
+                                    128 threads -> 19,648/s (main 21,322, server 93%)
+  my original code, 500,000 swipes: 128 threads -> warmup 14,022/s, main 21,797/s, overall 21,050/s, 0 failed, 0 retries,
+                                       server 95% CPU, client about 51% busy
+                                     32 threads -> main 16,741/s, overall 16,530/s, server 80% CPU
+  Part 2 (my original code, 128 threads): overall 20,581/s, latency mean 5.73 / median 5 / p95 9 / p99 14 ms (whole ms)
+  -> my client used to be the limit (c7g: 88-99% CPU); now the t3.micro server is (95% CPU, client half idle)
+  Server ceiling: the 32-thread run had the server 80% busy at 16,741/s -> 2 x 0.80 / 16,741 = 96 us of server CPU per swipe
+     -> at 100% the server can do about 2 / 0.000096 = 20,900 swipes/s; the 128-thread run reached 21,797/s in the main phase
+
+Apache HttpClient 5 experiment (separate copy of my client, not in this repo): same results on EC2
+  m8azn.large, 200,000 swipes: 32 / 64 / 128 threads -> 16,614 / 20,108 / 20,671 swipes/s overall (server 86-94% CPU)
+  500,000 swipes, 128 threads: overall 21,041/s, client CPU 15% busy (14 us per swipe vs about 55 us for the JDK client)
+  -> uses about 4x less client CPU, but the server is the limit, so no gain
+
+Laptop (Razer) as the client on the NEU campus network -> server public IP
+  round trip: mean 13.55 ms, median 13.57 ms
+  256 threads, 200,000 swipes: stalled for over 100 s with the server idle
+  64 threads, 40,000 swipes: my code 756/s overall (71 retries), Apache copy 745/s (88 retries), 0 failed
+  ss every 2 s: up to 32 of the 64 connections stuck in SYN-SENT -> the campus network is slow to let new connections
+  through, and Tomcat makes the client open a new one every 100 requests -> campus results are not valid; home results stand
+
+Local tests on my laptop (Tomcat 9.0.122 locally, client pinned to 2 cores with taskset), my original code, 500,000 swipes:
+  1 core + its hyperthread (like an Intel .large): 13,325 / 13,376 swipes/s overall, client CPU 93% busy
+  2 real cores (like the m8azn or c7g .large):       20,485 / 20,673 swipes/s overall, client CPU 90-92% busy
+  -> the client is CPU-bound, so per-core speed and real cores matter
+
+m8azn.large client -> m8azn.large server (both from the image of my server, same subnet; an experiment, because the server is not free tier)
+  round trip: mean 0.15 ms, median 0.11 ms
+  200,000 swipes (main phase): 32 -> 38,700/s, 64 -> 39,289/s, 128 -> 32,754/s, 256 -> 31,437/s; client 92-98% busy, server 38-59%
+  500,000 swipes: 64 threads -> warmup 20,369/s, main 49,476/s, overall 45,330/s, 0 failed  <- best (experiment_m8azn_server_part1.txt)
+                  32 threads -> 43,133/s; 64 threads -> 42,276/s; 32 threads -> 43,200/s; all 0 failed, 0 retries
+  -> client 91-95% busy (38-41 us of CPU per swipe), server about 50% busy: my client is the limit again

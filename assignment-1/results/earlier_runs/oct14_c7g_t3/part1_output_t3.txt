@@ -1,0 +1,27 @@
+Client Part 1 - secondary run: t3.micro client EC2 (free tier, the expected setup) in the same subnet as the server, using the server's private IP
+Run at: 2026-10-14 ~10:34 PDT
+Command: java -jar client-part1.jar http://172.31.36.18:8080/skitrak 64
+
+===== Ingest =====
+Server: http://172.31.36.18:8080/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 7406 ms, 4320 swipes/s
+Main phase (64 threads): 54401 ms, 8602 swipes/s
+Total run time: 61807 ms
+Overall throughput: 8089 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 64 threads sending at once, 0 retries
+===== Leaderboard =====
+Resort 1: 124 updates, connect time 291 ms
+Resort 2: 124 updates, connect time 8 ms
+Resort 3: 124 updates, connect time 5 ms
+Resort 4: 124 updates, connect time 5 ms
+Resort 5: 124 updates, connect time 5 ms
+Resort 6: 124 updates, connect time 6 ms
+Resort 7: 124 updates, connect time 5 ms
+Resort 8: 124 updates, connect time 6 ms
+Resort 9: 124 updates, connect time 5 ms
+Resort 10: 124 updates, connect time 6 ms
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 34 ms
+Push latency: mean 3 ms, max 33 ms (1240 updates)

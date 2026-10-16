@@ -1,0 +1,27 @@
+Client Part 1 - fastest run: c7g.large client EC2 (AWS Graviton3, 2 cores) in the same subnet as the server, using the server's private IP
+Run at: 2026-10-13 ~23:05 local time (run 3 of 3)
+Command: java -jar client-part1.jar http://172.31.36.18:8080/skitrak 32
+
+===== Ingest =====
+Server: http://172.31.36.18:8080/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 4745 ms, 6743 swipes/s
+Main phase (32 threads): 32004 ms, 14623 swipes/s
+Total run time: 36749 ms
+Overall throughput: 13605 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 32 threads sending at once, 0 retries
+===== Leaderboard =====
+Resort 1: 74 updates, connect time 166 ms
+Resort 2: 74 updates, connect time 5 ms
+Resort 3: 74 updates, connect time 7 ms
+Resort 4: 74 updates, connect time 6 ms
+Resort 5: 74 updates, connect time 4 ms
+Resort 6: 74 updates, connect time 4 ms
+Resort 7: 74 updates, connect time 3 ms
+Resort 8: 74 updates, connect time 4 ms
+Resort 9: 74 updates, connect time 4 ms
+Resort 10: 74 updates, connect time 3 ms
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 20 ms
+Push latency: mean 2 ms, max 11 ms (740 updates)
