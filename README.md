@@ -1,1 +1,1 @@
-# cs6650-assignment1
+# cs6650-assignments
