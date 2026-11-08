@@ -1,0 +1,49 @@
+===== Ingest =====
+Server: http://cs6650-a2-alb-1220989307.us-west-2.elb.amazonaws.com/skitrak
+Successful swipes: 1000000
+Failed swipes: 0
+Warmup (32 threads x 1000): 2773 ms, 11539 swipes/s
+Main phase (256 threads): 39475 ms, 24521 swipes/s
+Total run time: 42248 ms
+Overall throughput: 23669 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 256 connections open at once, 0 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 60% busy on 2 cores, 49 us of CPU per swipe -> limit at 100% CPU about 40,544 swipes/s
+===== Ingest latency (ms) =====
+Requests: 1000000
+Mean: 10.036
+Median: 9.459
+p95: 18.254
+p99: 25.077
+Min: 0.605
+Max: 135.629
+===== Throughput per resort =====
+Resort 1: 100113 swipes, 2369 swipes/s
+Resort 2: 99939 swipes, 2365 swipes/s
+Resort 3: 100206 swipes, 2371 swipes/s
+Resort 4: 100001 swipes, 2366 swipes/s
+Resort 5: 100021 swipes, 2367 swipes/s
+Resort 6: 100234 swipes, 2372 swipes/s
+Resort 7: 99491 swipes, 2354 swipes/s
+Resort 8: 100083 swipes, 2368 swipes/s
+Resort 9: 99929 swipes, 2365 swipes/s
+Resort 10: 99983 swipes, 2366 swipes/s
+===== Leaderboard =====
+Resort 1: 444 updates, connect time 83 ms
+Resort 2: 441 updates, connect time 5 ms
+Resort 3: 444 updates, connect time 3 ms
+Resort 4: 472 updates, connect time 3 ms
+Resort 5: 477 updates, connect time 2 ms
+Resort 6: 458 updates, connect time 4 ms
+Resort 7: 487 updates, connect time 2 ms
+Resort 8: 467 updates, connect time 3 ms
+Resort 9: 449 updates, connect time 2 ms
+Resort 10: 470 updates, connect time 5 ms
+Total leaderboard updates delivered: 4609
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 11 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 1.91
+Median: 1
+p95: 4
+p99: 21
+Files: /home/ec2-user/results_lb-warm-4servers-2clients-1m-each/swipe_latencies.csv, /home/ec2-user/results_lb-warm-4servers-2clients-1m-each/throughput.csv, /home/ec2-user/results_lb-warm-4servers-2clients-1m-each/throughput.png

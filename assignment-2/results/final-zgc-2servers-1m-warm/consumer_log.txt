@@ -1,0 +1,143 @@
+01:27:02 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:27:07 processed=55818 rate=11163/s lag avg=0ms max=21ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1632 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=55834}
+01:27:12 processed=189784 rate=26793/s lag avg=0ms max=24ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2228 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=189790}
+01:27:17 processed=337322 rate=29507/s lag avg=0ms max=17ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2599 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=337322}
+01:27:22 processed=484744 rate=29484/s lag avg=0ms max=17ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2888 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=484751}
+01:27:27 processed=500000 rate=3051/s lag avg=0ms max=27ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:27:32 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:27:37 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:27:42 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:27:47 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:27:52 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:27:57 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:02 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:07 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:12 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:17 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:22 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:27 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:32 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:37 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:42 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:47 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:52 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:28:57 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:02 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:07 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:12 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:17 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:22 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:27 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:32 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:37 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:42 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+01:29:47 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2921 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500000}
+Stopping skitrak-consumer.service - SkiTrak consumer (assignment 2)...
+consumer stopped, processed 500000 swipes
+skitrak-consumer.service: Main process exited, code=exited, status=143/n/a
+skitrak-consumer.service: Failed with result 'exit-code'.
+Stopped skitrak-consumer.service - SkiTrak consumer (assignment 2).
+skitrak-consumer.service: Consumed 7.629s CPU time.
+Started skitrak-consumer.service - SkiTrak consumer (assignment 2).
+[ConsumerPool] 10 consumer threads for 10 resort queues
+01:29:56 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:30:01 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:30:06 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:30:11 processed=58370 rate=11674/s lag avg=0ms max=28ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1573 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=58417}
+01:30:16 processed=223267 rate=32979/s lag avg=1ms max=68ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2264 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=223271}
+01:30:21 processed=430783 rate=41503/s lag avg=3ms max=92ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2739 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=430783}
+01:30:26 processed=500000 rate=13843/s lag avg=4ms max=128ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:30:31 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:30:36 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:30:41 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:30:46 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:30:51 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:30:56 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:01 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:06 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:11 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:16 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:21 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:26 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:31 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:36 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:41 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:46 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:51 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+01:31:56 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2852 broadcastFailures=0 perServer={ip-172-31-32-167.us-west-2.compute.internal=500000}
+Stopping skitrak-consumer.service - SkiTrak consumer (assignment 2)...
+consumer stopped, processed 500000 swipes
+skitrak-consumer.service: Main process exited, code=exited, status=143/n/a
+skitrak-consumer.service: Failed with result 'exit-code'.
+Stopped skitrak-consumer.service - SkiTrak consumer (assignment 2).
+skitrak-consumer.service: Consumed 7.095s CPU time.
+Started skitrak-consumer.service - SkiTrak consumer (assignment 2).
+[ConsumerPool] 10 consumer threads for 10 resort queues
+01:32:04 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:32:09 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:32:14 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:32:19 processed=65603 rate=13120/s lag avg=0ms max=26ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1639 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=32859, ip-172-31-32-167.us-west-2.compute.internal=32858}
+01:32:24 processed=210142 rate=28907/s lag avg=0ms max=11ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2241 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=105073, ip-172-31-32-167.us-west-2.compute.internal=105072}
+01:32:29 processed=356613 rate=29294/s lag avg=0ms max=12ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2596 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=178309, ip-172-31-32-167.us-west-2.compute.internal=178307}
+01:32:34 processed=500000 rate=28677/s lag avg=0ms max=28ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:32:39 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:32:44 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:32:49 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:32:54 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:32:59 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:04 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:09 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:14 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:19 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:24 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:29 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:34 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:39 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:44 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:49 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:54 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:33:59 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:04 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:09 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:14 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:19 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:24 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:29 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:34 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:39 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:44 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:49 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:54 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:34:59 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:04 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:09 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:14 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:19 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:24 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:29 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:34 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:39 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:44 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:49 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+01:35:54 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2905 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250001, ip-172-31-32-167.us-west-2.compute.internal=249999}
+Stopping skitrak-consumer.service - SkiTrak consumer (assignment 2)...
+consumer stopped, processed 500000 swipes
+skitrak-consumer.service: Main process exited, code=exited, status=143/n/a
+skitrak-consumer.service: Failed with result 'exit-code'.
+Stopped skitrak-consumer.service - SkiTrak consumer (assignment 2).
+skitrak-consumer.service: Consumed 7.614s CPU time.
+Started skitrak-consumer.service - SkiTrak consumer (assignment 2).
+[ConsumerPool] 10 consumer threads for 10 resort queues
+01:36 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:36:05 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:36:10 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:36:15 processed=29894 rate=5978/s lag avg=0ms max=20ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1299 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=14954, ip-172-31-32-167.us-west-2.compute.internal=14953}
+01:36:20 processed=157795 rate=25580/s lag avg=0ms max=13ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2084 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=78900, ip-172-31-32-167.us-west-2.compute.internal=78899}
+01:36:25 processed=298774 rate=28195/s lag avg=0ms max=13ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2507 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=149389, ip-172-31-32-167.us-west-2.compute.internal=149385}
+01:36:30 processed=436915 rate=27628/s lag avg=0ms max=13ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2767 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=218462, ip-172-31-32-167.us-west-2.compute.internal=218453}
+01:36:35 processed=577243 rate=28065/s lag avg=0ms max=28ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=3011 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=288628, ip-172-31-32-167.us-west-2.compute.internal=288621}
+01:36:40 processed=716929 rate=27937/s lag avg=0ms max=16ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=3242 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=358465, ip-172-31-32-167.us-west-2.compute.internal=358465}
+01:36:45 processed=860030 rate=28620/s lag avg=0ms max=11ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=3431 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=430015, ip-172-31-32-167.us-west-2.compute.internal=430015}
+01:36:50 processed=1000000 rate=27994/s lag avg=0ms max=14ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=3620 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500003, ip-172-31-32-167.us-west-2.compute.internal=499997}
+01:36:55 processed=1000000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=3620 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500003, ip-172-31-32-167.us-west-2.compute.internal=499997}
+01:37 processed=1000000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=3620 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=500003, ip-172-31-32-167.us-west-2.compute.internal=499997}

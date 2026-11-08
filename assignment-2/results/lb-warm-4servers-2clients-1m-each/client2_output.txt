@@ -1,0 +1,49 @@
+===== Ingest =====
+Server: http://cs6650-a2-alb-1220989307.us-west-2.elb.amazonaws.com/skitrak
+Successful swipes: 1000000
+Failed swipes: 0
+Warmup (32 threads x 1000): 3527 ms, 9072 swipes/s
+Main phase (256 threads): 39542 ms, 24480 swipes/s
+Total run time: 43069 ms
+Overall throughput: 23218 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 256 connections open at once, 0 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 63% busy on 2 cores, 52 us of CPU per swipe -> limit at 100% CPU about 38,782 swipes/s
+===== Ingest latency (ms) =====
+Requests: 1000000
+Mean: 10.172
+Median: 9.592
+p95: 18.515
+p99: 25.284
+Min: 0.639
+Max: 187.419
+===== Throughput per resort =====
+Resort 1: 99771 swipes, 2316 swipes/s
+Resort 2: 100327 swipes, 2329 swipes/s
+Resort 3: 100275 swipes, 2328 swipes/s
+Resort 4: 100114 swipes, 2324 swipes/s
+Resort 5: 100372 swipes, 2330 swipes/s
+Resort 6: 99376 swipes, 2307 swipes/s
+Resort 7: 100075 swipes, 2323 swipes/s
+Resort 8: 100231 swipes, 2327 swipes/s
+Resort 9: 99866 swipes, 2318 swipes/s
+Resort 10: 99593 swipes, 2312 swipes/s
+===== Leaderboard =====
+Resort 1: 445 updates, connect time 90 ms
+Resort 2: 445 updates, connect time 5 ms
+Resort 3: 445 updates, connect time 6 ms
+Resort 4: 474 updates, connect time 4 ms
+Resort 5: 481 updates, connect time 4 ms
+Resort 6: 461 updates, connect time 5 ms
+Resort 7: 487 updates, connect time 4 ms
+Resort 8: 470 updates, connect time 6 ms
+Resort 9: 452 updates, connect time 4 ms
+Resort 10: 475 updates, connect time 6 ms
+Total leaderboard updates delivered: 4635
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 13 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 2.14
+Median: 2
+p95: 5
+p99: 20
+Files: /home/ec2-user/results_lb-warm-4servers-2clients-1m-each/swipe_latencies.csv, /home/ec2-user/results_lb-warm-4servers-2clients-1m-each/throughput.csv, /home/ec2-user/results_lb-warm-4servers-2clients-1m-each/throughput.png

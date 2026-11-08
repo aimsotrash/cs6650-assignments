@@ -1,0 +1,45 @@
+== i-087816cc99112856b
+206:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+207:[ChannelPool] connection to rabbit lost: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - reconnection test, class-id=0, method-id=0)
+208:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+209:[ChannelPool] reconnected to rabbit, 64 channels
+214:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+215:[ChannelPool] connection to rabbit lost: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - reconnection test, class-id=0, method-id=0)
+216:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+217:[ChannelPool] reconnected to rabbit, 64 channels
+254:[AppListener] rabbit not ready at startup: java.net.ConnectException: Connection refused (Connection refused)
+255:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+269:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+270:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+271:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+272:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+273:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+274:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+275:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+276:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+277:[LeaderboardRelay] can't reach rabbit (java.io.IOException), trying again in 5 s
+278:[RabbitMQ Error On Write Thread] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+279:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+280:[ChannelPool] reconnected to rabbit, 64 channels
+== i-086bf7f81b21c5e6a
+206:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+207:[ChannelPool] connection to rabbit lost: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - reconnection test, class-id=0, method-id=0)
+208:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+209:[ChannelPool] reconnected to rabbit, 64 channels
+214:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+215:[ChannelPool] connection to rabbit lost: connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - reconnection test, class-id=0, method-id=0)
+216:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+217:[ChannelPool] reconnected to rabbit, 64 channels
+254:[AppListener] rabbit not ready at startup: java.net.ConnectException: Connection refused (Connection refused)
+255:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+269:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+270:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+271:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+272:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+273:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+274:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+275:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+276:[LeaderboardRelay] can't reach rabbit (java.net.ConnectException: Connection refused (Connection refused)), trying again in 5 s
+277:[LeaderboardRelay] can't reach rabbit (com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.), trying again in 5 s
+278:[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+279:[ChannelPool] reconnected to rabbit, 64 channels

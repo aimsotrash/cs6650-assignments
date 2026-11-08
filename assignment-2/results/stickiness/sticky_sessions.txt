@@ -1,0 +1,40 @@
+ALB sticky-session check, 2026-11-07 07:23:12 UTC, ALB cs6650-a2-alb, targets: server1 i-077baca8c71068556, server2 i-0d3a214efed24e4d4
+Each request carried ?probe=<kind>-<n>; counts are lines in each server's Tomcat access log (on only for this check).
+  nocookie   = 8 HTTP GET /skitrak/health, no cookies
+  cookie     = 8 HTTP GET with a cookie jar (the ALB sets AWSALB / AWSALBCORS on the first response)
+  wsnocookie = 4 WebSocket upgrades to /skitrak/leaderboard/1 without a cookie
+  wshdr      = 5 WebSocket upgrades sending the AWSALB cookie (curl's cookie jar is not sent on ws:// URLs, so the cookie went in a Cookie header; the earlier wscookie probes went out without it)
+
+== i-077baca8c71068556
+nocookie=4 cookie=0 wsnocookie=3 wshdr=0 
+172.31.36.151 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=nocookie-1 HTTP/1.1" 200 16
+172.31.36.151 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=nocookie-5 HTTP/1.1" 200 16
+172.31.31.197 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=nocookie-6 HTTP/1.1" 200 16
+172.31.31.197 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=nocookie-7 HTTP/1.1" 200 16
+172.31.36.151 - - [07/Nov/2026:07:21:28 +0000] "GET /skitrak/leaderboard/1?probe=wscookie-1 HTTP/1.1" 101 -
+172.31.36.151 - - [07/Nov/2026:07:21:34 +0000] "GET /skitrak/leaderboard/1?probe=wscookie-3 HTTP/1.1" 101 -
+172.31.31.197 - - [07/Nov/2026:07:21:37 +0000] "GET /skitrak/leaderboard/1?probe=wsnocookie-1 HTTP/1.1" 101 -
+172.31.36.151 - - [07/Nov/2026:07:21:43 +0000] "GET /skitrak/leaderboard/1?probe=wsnocookie-3 HTTP/1.1" 101 -
+172.31.31.197 - - [07/Nov/2026:07:21:46 +0000] "GET /skitrak/leaderboard/1?probe=wsnocookie-4 HTTP/1.1" 101 -
+== i-0d3a214efed24e4d4
+nocookie=4 cookie=8 wsnocookie=1 wshdr=5 
+172.31.36.151 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=nocookie-2 HTTP/1.1" 200 16
+172.31.31.197 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=nocookie-3 HTTP/1.1" 200 16
+172.31.36.151 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=nocookie-4 HTTP/1.1" 200 16
+172.31.31.197 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=nocookie-8 HTTP/1.1" 200 16
+172.31.31.197 - - [07/Nov/2026:07:21:27 +0000] "GET /skitrak/health?probe=cookie-1 HTTP/1.1" 200 16
+172.31.31.197 - - [07/Nov/2026:07:21:28 +0000] "GET /skitrak/health?probe=cookie-2 HTTP/1.1" 200 16
+172.31.31.197 - - [07/Nov/2026:07:21:28 +0000] "GET /skitrak/health?probe=cookie-3 HTTP/1.1" 200 16
+172.31.36.151 - - [07/Nov/2026:07:21:28 +0000] "GET /skitrak/health?probe=cookie-4 HTTP/1.1" 200 16
+172.31.36.151 - - [07/Nov/2026:07:21:28 +0000] "GET /skitrak/health?probe=cookie-5 HTTP/1.1" 200 16
+172.31.36.151 - - [07/Nov/2026:07:21:28 +0000] "GET /skitrak/health?probe=cookie-6 HTTP/1.1" 200 16
+172.31.31.197 - - [07/Nov/2026:07:21:28 +0000] "GET /skitrak/health?probe=cookie-7 HTTP/1.1" 200 16
+172.31.36.151 - - [07/Nov/2026:07:21:28 +0000] "GET /skitrak/health?probe=cookie-8 HTTP/1.1" 200 16
+172.31.36.151 - - [07/Nov/2026:07:21:31 +0000] "GET /skitrak/leaderboard/1?probe=wscookie-2 HTTP/1.1" 101 -
+172.31.36.151 - - [07/Nov/2026:07:21:40 +0000] "GET /skitrak/leaderboard/1?probe=wsnocookie-2 HTTP/1.1" 101 -
+172.31.36.151 - - [07/Nov/2026:07:22:23 +0000] "GET /skitrak/leaderboard/1?probe=wsverbose-1 HTTP/1.1" 101 -
+172.31.31.197 - - [07/Nov/2026:07:22:26 +0000] "GET /skitrak/leaderboard/1?probe=wshdr-1 HTTP/1.1" 101 -
+172.31.31.197 - - [07/Nov/2026:07:22:29 +0000] "GET /skitrak/leaderboard/1?probe=wshdr-2 HTTP/1.1" 101 -
+172.31.31.197 - - [07/Nov/2026:07:22:32 +0000] "GET /skitrak/leaderboard/1?probe=wshdr-3 HTTP/1.1" 101 -
+172.31.31.197 - - [07/Nov/2026:07:22:35 +0000] "GET /skitrak/leaderboard/1?probe=wshdr-4 HTTP/1.1" 101 -
+172.31.36.151 - - [07/Nov/2026:07:22:38 +0000] "GET /skitrak/leaderboard/1?probe=wshdr-5 HTTP/1.1" 101 -

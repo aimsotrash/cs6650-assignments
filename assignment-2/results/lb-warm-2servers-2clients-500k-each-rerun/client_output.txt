@@ -1,0 +1,49 @@
+===== Ingest =====
+Server: http://cs6650-a2-alb-1220989307.us-west-2.elb.amazonaws.com/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 2686 ms, 11913 swipes/s
+Main phase (256 threads): 19709 ms, 23745 swipes/s
+Total run time: 22395 ms
+Overall throughput: 22326 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 256 connections open at once, 0 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 60% busy on 2 cores, 51 us of CPU per swipe -> limit at 100% CPU about 39,593 swipes/s
+===== Ingest latency (ms) =====
+Requests: 500000
+Mean: 10.037
+Median: 7.924
+p95: 26.822
+p99: 43.598
+Min: 0.612
+Max: 127.828
+===== Throughput per resort =====
+Resort 1: 49814 swipes, 2224 swipes/s
+Resort 2: 49995 swipes, 2232 swipes/s
+Resort 3: 50142 swipes, 2238 swipes/s
+Resort 4: 49982 swipes, 2231 swipes/s
+Resort 5: 50068 swipes, 2235 swipes/s
+Resort 6: 49893 swipes, 2227 swipes/s
+Resort 7: 50003 swipes, 2232 swipes/s
+Resort 8: 50126 swipes, 2238 swipes/s
+Resort 9: 50039 swipes, 2234 swipes/s
+Resort 10: 49938 swipes, 2229 swipes/s
+===== Leaderboard =====
+Resort 1: 354 updates, connect time 88 ms
+Resort 2: 369 updates, connect time 4 ms
+Resort 3: 351 updates, connect time 3 ms
+Resort 4: 334 updates, connect time 7 ms
+Resort 5: 342 updates, connect time 3 ms
+Resort 6: 356 updates, connect time 3 ms
+Resort 7: 374 updates, connect time 2 ms
+Resort 8: 363 updates, connect time 4 ms
+Resort 9: 354 updates, connect time 3 ms
+Resort 10: 339 updates, connect time 3 ms
+Total leaderboard updates delivered: 3536
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 12 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 1.36
+Median: 1
+p95: 4
+p99: 13
+Files: /home/ec2-user/results_lb-warm-2servers-2clients-500k-each-rerun/swipe_latencies.csv, /home/ec2-user/results_lb-warm-2servers-2clients-500k-each-rerun/throughput.csv, /home/ec2-user/results_lb-warm-2servers-2clients-500k-each-rerun/throughput.png

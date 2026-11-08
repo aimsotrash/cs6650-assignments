@@ -1,0 +1,49 @@
+===== Ingest =====
+Server: http://cs6650-a2-alb-1212986738.us-west-2.elb.amazonaws.com/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 3042 ms, 10519 swipes/s
+Main phase (512 threads): 16725 ms, 27982 swipes/s
+Total run time: 19767 ms
+Overall throughput: 25294 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 512 connections open at once, 0 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 82% busy on 2 cores, 59 us of CPU per swipe -> limit at 100% CPU about 34,023 swipes/s
+===== Ingest latency (ms) =====
+Requests: 500000
+Mean: 16.988
+Median: 17.372
+p95: 30.948
+p99: 40.056
+Min: 1.397
+Max: 105.385
+===== Throughput per resort =====
+Resort 1: 49725 swipes, 2515 swipes/s
+Resort 2: 50164 swipes, 2537 swipes/s
+Resort 3: 50202 swipes, 2539 swipes/s
+Resort 4: 50082 swipes, 2533 swipes/s
+Resort 5: 50448 swipes, 2552 swipes/s
+Resort 6: 49786 swipes, 2518 swipes/s
+Resort 7: 50127 swipes, 2535 swipes/s
+Resort 8: 49796 swipes, 2519 swipes/s
+Resort 9: 49560 swipes, 2507 swipes/s
+Resort 10: 50110 swipes, 2535 swipes/s
+===== Leaderboard =====
+Resort 1: 278 updates, connect time 112 ms
+Resort 2: 297 updates, connect time 14 ms
+Resort 3: 267 updates, connect time 8 ms
+Resort 4: 264 updates, connect time 16 ms
+Resort 5: 312 updates, connect time 6 ms
+Resort 6: 295 updates, connect time 13 ms
+Resort 7: 289 updates, connect time 8 ms
+Resort 8: 307 updates, connect time 5 ms
+Resort 9: 273 updates, connect time 5 ms
+Resort 10: 289 updates, connect time 4 ms
+Total leaderboard updates delivered: 2871
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 19 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 4.82
+Median: 3
+p95: 16
+p99: 23
+Files: /home/ec2-user/results_final-zgc-4servers-pool128-512t-500k/swipe_latencies.csv, /home/ec2-user/results_final-zgc-4servers-pool128-512t-500k/throughput.csv, /home/ec2-user/results_final-zgc-4servers-pool128-512t-500k/throughput.png

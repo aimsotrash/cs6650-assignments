@@ -1,0 +1,49 @@
+===== Ingest =====
+Server: http://cs6650-a2-alb-1220989307.us-west-2.elb.amazonaws.com/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 3321 ms, 9635 swipes/s
+Main phase (256 threads): 19597 ms, 23881 swipes/s
+Total run time: 22918 ms
+Overall throughput: 21816 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 256 connections open at once, 0 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 57% busy on 2 cores, 48 us of CPU per swipe -> limit at 100% CPU about 41,879 swipes/s
+===== Ingest latency (ms) =====
+Requests: 500000
+Mean: 10.085
+Median: 7.964
+p95: 26.256
+p99: 43.032
+Min: 1.316
+Max: 156.262
+===== Throughput per resort =====
+Resort 1: 49712 swipes, 2169 swipes/s
+Resort 2: 49570 swipes, 2162 swipes/s
+Resort 3: 49862 swipes, 2175 swipes/s
+Resort 4: 50407 swipes, 2199 swipes/s
+Resort 5: 50126 swipes, 2187 swipes/s
+Resort 6: 50406 swipes, 2199 swipes/s
+Resort 7: 49960 swipes, 2179 swipes/s
+Resort 8: 49867 swipes, 2175 swipes/s
+Resort 9: 50104 swipes, 2186 swipes/s
+Resort 10: 49986 swipes, 2181 swipes/s
+===== Leaderboard =====
+Resort 1: 379 updates, connect time 90 ms
+Resort 2: 354 updates, connect time 5 ms
+Resort 3: 382 updates, connect time 5 ms
+Resort 4: 386 updates, connect time 5 ms
+Resort 5: 355 updates, connect time 4 ms
+Resort 6: 352 updates, connect time 5 ms
+Resort 7: 364 updates, connect time 4 ms
+Resort 8: 363 updates, connect time 5 ms
+Resort 9: 335 updates, connect time 4 ms
+Resort 10: 371 updates, connect time 6 ms
+Total leaderboard updates delivered: 3641
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 13 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 1.68
+Median: 1
+p95: 4
+p99: 11
+Files: /home/ec2-user/results_lb-warm-2servers-2clients-500k-each/swipe_latencies.csv, /home/ec2-user/results_lb-warm-2servers-2clients-500k-each/throughput.csv, /home/ec2-user/results_lb-warm-2servers-2clients-500k-each/throughput.png

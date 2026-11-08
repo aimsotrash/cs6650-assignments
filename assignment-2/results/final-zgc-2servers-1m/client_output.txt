@@ -1,0 +1,49 @@
+===== Ingest =====
+Server: http://cs6650-a2-alb-33534452.us-west-2.elb.amazonaws.com/skitrak
+Successful swipes: 1000000
+Failed swipes: 0
+Warmup (32 threads x 1000): 3174 ms, 10081 swipes/s
+Main phase (256 threads): 81804 ms, 11833 swipes/s
+Total run time: 84978 ms
+Overall throughput: 11767 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 256 connections open at once, 0 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 32% busy on 2 cores, 54 us of CPU per swipe -> limit at 100% CPU about 37,230 swipes/s
+===== Ingest latency (ms) =====
+Requests: 1000000
+Mean: 20.965
+Median: 21.087
+p95: 25.896
+p99: 33.678
+Min: 0.668
+Max: 465.611
+===== Throughput per resort =====
+Resort 1: 99982 swipes, 1176 swipes/s
+Resort 2: 99391 swipes, 1169 swipes/s
+Resort 3: 100152 swipes, 1178 swipes/s
+Resort 4: 100471 swipes, 1182 swipes/s
+Resort 5: 99774 swipes, 1174 swipes/s
+Resort 6: 100349 swipes, 1180 swipes/s
+Resort 7: 100336 swipes, 1180 swipes/s
+Resort 8: 99486 swipes, 1170 swipes/s
+Resort 9: 100338 swipes, 1180 swipes/s
+Resort 10: 99721 swipes, 1173 swipes/s
+===== Leaderboard =====
+Resort 1: 387 updates, connect time 97 ms
+Resort 2: 370 updates, connect time 8 ms
+Resort 3: 345 updates, connect time 5 ms
+Resort 4: 363 updates, connect time 3 ms
+Resort 5: 356 updates, connect time 3 ms
+Resort 6: 359 updates, connect time 3 ms
+Resort 7: 363 updates, connect time 3 ms
+Resort 8: 362 updates, connect time 4 ms
+Resort 9: 363 updates, connect time 6 ms
+Resort 10: 339 updates, connect time 5 ms
+Total leaderboard updates delivered: 3607
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 13 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 4.66
+Median: 2
+p95: 13
+p99: 17
+Files: /home/ec2-user/results_final-zgc-2servers-1m/swipe_latencies.csv, /home/ec2-user/results_final-zgc-2servers-1m/throughput.csv, /home/ec2-user/results_final-zgc-2servers-1m/throughput.png

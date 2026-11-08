@@ -1,0 +1,49 @@
+===== Ingest =====
+Server: http://cs6650-a2-alb-1220989307.us-west-2.elb.amazonaws.com/skitrak
+Successful swipes: 1000000
+Failed swipes: 0
+Warmup (32 threads x 1000): 2236 ms, 14311 swipes/s
+Main phase (256 threads): 21661 ms, 44688 swipes/s
+Total run time: 23897 ms
+Overall throughput: 41846 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 256 connections open at once, 0 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 91% busy on 2 cores, 41 us of CPU per swipe -> limit at 100% CPU about 49,375 swipes/s
+===== Ingest latency (ms) =====
+Requests: 1000000
+Mean: 5.576
+Median: 5.269
+p95: 9.536
+p99: 12.459
+Min: 0.58
+Max: 102.127
+===== Throughput per resort =====
+Resort 1: 100136 swipes, 4190 swipes/s
+Resort 2: 100110 swipes, 4189 swipes/s
+Resort 3: 99892 swipes, 4180 swipes/s
+Resort 4: 99959 swipes, 4182 swipes/s
+Resort 5: 99739 swipes, 4173 swipes/s
+Resort 6: 99717 swipes, 4172 swipes/s
+Resort 7: 99775 swipes, 4175 swipes/s
+Resort 8: 100600 swipes, 4209 swipes/s
+Resort 9: 99495 swipes, 4163 swipes/s
+Resort 10: 100577 swipes, 4208 swipes/s
+===== Leaderboard =====
+Resort 1: 354 updates, connect time 88 ms
+Resort 2: 387 updates, connect time 3 ms
+Resort 3: 363 updates, connect time 8 ms
+Resort 4: 360 updates, connect time 3 ms
+Resort 5: 363 updates, connect time 3 ms
+Resort 6: 359 updates, connect time 3 ms
+Resort 7: 376 updates, connect time 3 ms
+Resort 8: 347 updates, connect time 2 ms
+Resort 9: 354 updates, connect time 4 ms
+Resort 10: 337 updates, connect time 3 ms
+Total leaderboard updates delivered: 3600
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 12 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 1.34
+Median: 1
+p95: 3
+p99: 11
+Files: /home/ec2-user/results_tune2-parallelgc-baseline-rerun-1m/swipe_latencies.csv, /home/ec2-user/results_tune2-parallelgc-baseline-rerun-1m/throughput.csv, /home/ec2-user/results_tune2-parallelgc-baseline-rerun-1m/throughput.png

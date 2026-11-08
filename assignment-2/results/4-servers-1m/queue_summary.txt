@@ -1,0 +1,5 @@
+samples: 272 (162 with traffic)
+queue depth: peak 203, average 48
+publish rate: peak 6559/s, average 5570/s
+ack (consume) rate: peak 6437/s, average 5467/s
+dead letters at the end: 0

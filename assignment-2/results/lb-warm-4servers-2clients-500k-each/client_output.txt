@@ -1,0 +1,49 @@
+===== Ingest =====
+Server: http://cs6650-a2-alb-1220989307.us-west-2.elb.amazonaws.com/skitrak
+Successful swipes: 500000
+Failed swipes: 0
+Warmup (32 threads x 1000): 2831 ms, 11303 swipes/s
+Main phase (256 threads): 19320 ms, 24223 swipes/s
+Total run time: 22151 ms
+Overall throughput: 22572 swipes/s
+HTTP: 1 shared HttpClient (keep-alive), up to 256 connections open at once, 0 reopened after the server closed them (Connection: close), 0 retries
+Client CPU (main phase): 64% busy on 2 cores, 53 us of CPU per swipe -> limit at 100% CPU about 37,864 swipes/s
+===== Ingest latency (ms) =====
+Requests: 500000
+Mean: 9.951
+Median: 9.075
+p95: 19.361
+p99: 30.151
+Min: 0.611
+Max: 150.47
+===== Throughput per resort =====
+Resort 1: 49825 swipes, 2249 swipes/s
+Resort 2: 49888 swipes, 2252 swipes/s
+Resort 3: 50441 swipes, 2277 swipes/s
+Resort 4: 49971 swipes, 2255 swipes/s
+Resort 5: 49616 swipes, 2239 swipes/s
+Resort 6: 50377 swipes, 2274 swipes/s
+Resort 7: 49880 swipes, 2251 swipes/s
+Resort 8: 50068 swipes, 2260 swipes/s
+Resort 9: 49837 swipes, 2249 swipes/s
+Resort 10: 50097 swipes, 2261 swipes/s
+===== Leaderboard =====
+Resort 1: 346 updates, connect time 89 ms
+Resort 2: 369 updates, connect time 3 ms
+Resort 3: 359 updates, connect time 6 ms
+Resort 4: 349 updates, connect time 4 ms
+Resort 5: 375 updates, connect time 3 ms
+Resort 6: 366 updates, connect time 3 ms
+Resort 7: 358 updates, connect time 3 ms
+Resort 8: 341 updates, connect time 2 ms
+Resort 9: 360 updates, connect time 3 ms
+Resort 10: 374 updates, connect time 5 ms
+Total leaderboard updates delivered: 3597
+WebSocket connections: 10 (reconnections: 0)
+Average WebSocket connect time: 12 ms
+===== Push latency (receive time - serverTimestamp, ms) =====
+Mean: 1.87
+Median: 1
+p95: 5
+p99: 22
+Files: /home/ec2-user/results_lb-warm-4servers-2clients-500k-each/swipe_latencies.csv, /home/ec2-user/results_lb-warm-4servers-2clients-500k-each/throughput.csv, /home/ec2-user/results_lb-warm-4servers-2clients-500k-each/throughput.png

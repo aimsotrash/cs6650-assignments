@@ -1,0 +1,197 @@
+Started skitrak-consumer.service - SkiTrak consumer (assignment 2).
+[ConsumerPool] 10 consumer threads for 10 resort queues
+06:02:17 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:02:22 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:02:27 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:02:32 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:02:37 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:02:42 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:02:47 processed=6843 rate=1368/s lag avg=2ms max=106ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=914 broadcastFailures=0
+06:02:52 processed=14704 rate=1572/s lag avg=2ms max=18ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1067 broadcastFailures=0
+06:02:57 processed=22621 rate=1583/s lag avg=1ms max=10ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1223 broadcastFailures=0
+06:03:02 processed=28311 rate=1138/s lag avg=2ms max=24ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1304 broadcastFailures=0
+06:03:07 processed=33387 rate=1015/s lag avg=2ms max=37ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1380 broadcastFailures=0
+06:03:12 processed=40000 rate=1322/s lag avg=1ms max=9ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1435 broadcastFailures=0
+06:03:17 processed=40000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1435 broadcastFailures=0
+06:03:22 processed=40000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1435 broadcastFailures=0
+06:03:27 processed=40000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1435 broadcastFailures=0
+06:03:32 processed=40000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1435 broadcastFailures=0
+06:03:37 processed=40000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1435 broadcastFailures=0
+06:03:42 processed=40000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1435 broadcastFailures=0
+06:03:47 processed=40000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1435 broadcastFailures=0
+06:03:52 processed=40003 rate=0/s lag avg=1ms max=2ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1438 broadcastFailures=0
+06:03:57 processed=40003 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1438 broadcastFailures=0
+06:04:02 processed=40003 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1438 broadcastFailures=0
+06:04:07 processed=40003 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1438 broadcastFailures=0
+06:04:12 processed=41442 rate=287/s lag avg=2ms max=9ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1450 broadcastFailures=0
+06:04:17 processed=49292 rate=1570/s lag avg=1ms max=11ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1521 broadcastFailures=0
+[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+[monitor] com.rabbitmq.client.AlreadyClosedException: connection is already closed due to connection error; protocol method: #method<connection.close>(reply-code=320, reply-text=CONNECTION_FORCED - reconnection test, class-id=0, method-id=0)
+[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+06:04:27 processed=65323 rate=3206/s lag avg=210ms max=2217ms queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1642 broadcastFailures=0
+06:04:32 processed=73401 rate=1615/s lag avg=1ms max=10ms queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1694 broadcastFailures=0
+06:04:37 processed=80012 rate=1322/s lag avg=1ms max=8ms queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:04:42 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:04:47 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:04:52 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:04:57 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:02 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:07 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:12 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:17 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:22 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:27 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:32 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:37 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:42 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:47 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:52 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:05:57 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:02 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:07 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:12 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:17 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:22 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:27 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:32 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:37 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:42 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:47 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:52 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:06:57 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:02 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:07 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:12 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:17 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:22 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:27 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:32 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:37 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:42 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:47 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:52 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:07:57 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:02 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:07 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:12 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:17 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:22 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:27 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:32 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:37 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:42 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:47 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:52 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:08:57 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:02 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:07 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:12 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:17 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:22 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:27 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:32 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:37 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:42 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:47 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:52 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:09:57 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:02 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:07 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:12 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:17 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:22 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:27 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:32 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:37 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:42 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:47 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:52 processed=80012 rate=0/s lag - queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:10:57 processed=80376 rate=72/s lag avg=2ms max=11ms queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1725 broadcastFailures=0
+06:11:02 processed=88079 rate=1540/s lag avg=2ms max=29ms queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1766 broadcastFailures=0
+06:11:07 processed=95999 rate=1584/s lag avg=1ms max=11ms queued=0 threads=10 duplicates=3 rejected=0 broadcasts=1808 broadcastFailures=0
+[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+[AMQP Connection 172.31.39.154:5672] WARN com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+06:11:12 processed=104046 rate=1609/s lag avg=441ms max=2184ms queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1843 broadcastFailures=0
+06:11:17 processed=112006 rate=1592/s lag avg=2ms max=95ms queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1891 broadcastFailures=0
+06:11:22 processed=120012 rate=1601/s lag avg=1ms max=14ms queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:11:27 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:11:32 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:11:37 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:11:42 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:11:47 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:11:52 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:11:57 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:02 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:07 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:12 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:17 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:22 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:27 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:32 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:37 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:42 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:47 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:52 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:12:57 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:02 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:07 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:12 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:17 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:22 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:27 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:32 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:37 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:42 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:47 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:52 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:13:57 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:02 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:07 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:12 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:17 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:22 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:27 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:32 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:37 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:42 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:47 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:52 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:14:57 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:15:02 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:15:07 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:15:12 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:15:17 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+06:15:22 processed=120012 rate=0/s lag - queued=0 threads=10 duplicates=16 rejected=0 broadcasts=1921 broadcastFailures=0
+Stopping skitrak-consumer.service - SkiTrak consumer (assignment 2)...
+consumer stopped, processed 120012 swipes
+skitrak-consumer.service: Main process exited, code=exited, status=143/n/a
+skitrak-consumer.service: Failed with result 'exit-code'.
+Stopped skitrak-consumer.service - SkiTrak consumer (assignment 2).
+skitrak-consumer.service: Consumed 16.144s CPU time.
+Started skitrak-consumer.service - SkiTrak consumer (assignment 2).
+[ConsumerPool] 10 consumer threads for 10 resort queues
+06:15:30 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:15:35 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:15:40 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:15:45 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0
+06:15:50 processed=5537 rate=1107/s lag avg=2ms max=88ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=899 broadcastFailures=0
+06:15:55 processed=23720 rate=3636/s lag avg=3ms max=19ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1256 broadcastFailures=0
+06:16 processed=44463 rate=4148/s lag avg=7ms max=109ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1487 broadcastFailures=0
+06:16:05 processed=65692 rate=4245/s lag avg=9ms max=88ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1645 broadcastFailures=0
+06:16:10 processed=95542 rate=5970/s lag avg=11ms max=74ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1819 broadcastFailures=0
+06:16:15 processed=125766 rate=6044/s lag avg=15ms max=122ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1938 broadcastFailures=0
+06:16:20 processed=156119 rate=6070/s lag avg=14ms max=88ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2057 broadcastFailures=0
+06:16:25 processed=186595 rate=6095/s lag avg=17ms max=184ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2152 broadcastFailures=0
+06:16:30 processed=216683 rate=6017/s lag avg=14ms max=83ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2267 broadcastFailures=0
+06:16:35 processed=247283 rate=6120/s lag avg=14ms max=96ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2355 broadcastFailures=0
+06:16:40 processed=277874 rate=6118/s lag avg=14ms max=101ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2439 broadcastFailures=0
+06:16:45 processed=308624 rate=6150/s lag avg=21ms max=267ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2495 broadcastFailures=0
+06:16:50 processed=338594 rate=5994/s lag avg=13ms max=81ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2551 broadcastFailures=0
+06:16:55 processed=368783 rate=6037/s lag avg=14ms max=99ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2616 broadcastFailures=0
+06:17 processed=398659 rate=5975/s lag avg=15ms max=106ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2679 broadcastFailures=0
+06:17:05 processed=422013 rate=4670/s lag avg=11ms max=82ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2728 broadcastFailures=0
+06:17:10 processed=451464 rate=5890/s lag avg=15ms max=113ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2782 broadcastFailures=0
+06:17:15 processed=481034 rate=5914/s lag avg=13ms max=91ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2835 broadcastFailures=0
+06:17:20 processed=500000 rate=3793/s lag avg=13ms max=81ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2886 broadcastFailures=0
+06:17:25 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2886 broadcastFailures=0
+06:17:30 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2886 broadcastFailures=0

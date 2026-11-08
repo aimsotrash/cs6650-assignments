@@ -1,0 +1,52 @@
+Started skitrak-consumer.service - SkiTrak consumer (assignment 2).
+[ConsumerPool] 10 consumer threads for 10 resort queues
+01:09:58 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:03 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:08 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:13 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:18 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:23 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:28 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:33 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:38 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:43 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:48 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:53 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:10:58 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:03 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:08 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:13 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:18 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:23 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:28 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:33 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:38 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:43 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:48 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:53 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:11:58 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:12:03 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:12:08 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:12:13 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:12:18 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+Stopping skitrak-consumer.service - SkiTrak consumer (assignment 2)...
+consumer stopped, processed 0 swipes
+skitrak-consumer.service: Main process exited, code=exited, status=143/n/a
+skitrak-consumer.service: Failed with result 'exit-code'.
+Stopped skitrak-consumer.service - SkiTrak consumer (assignment 2).
+Started skitrak-consumer.service - SkiTrak consumer (assignment 2).
+[ConsumerPool] 10 consumer threads for 10 resort queues
+01:12:28 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:12:33 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:12:38 processed=0 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=0 broadcastFailures=0 perServer={}
+01:12:43 processed=30837 rate=6167/s lag avg=0ms max=118ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1322 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=15444, ip-172-31-32-167.us-west-2.compute.internal=15444}
+01:12:48 processed=88360 rate=11504/s lag avg=0ms max=12ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=1780 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=44180, ip-172-31-32-167.us-west-2.compute.internal=44180}
+01:12:53 processed=148018 rate=11931/s lag avg=0ms max=13ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2017 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=74009, ip-172-31-32-167.us-west-2.compute.internal=74009}
+01:12:58 processed=207491 rate=11894/s lag avg=0ms max=12ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2240 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=103745, ip-172-31-32-167.us-west-2.compute.internal=103746}
+01:13:03 processed=261787 rate=10859/s lag avg=0ms max=16ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2389 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=130893, ip-172-31-32-167.us-west-2.compute.internal=130894}
+01:13:08 processed=318897 rate=11422/s lag avg=0ms max=10ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2532 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=159448, ip-172-31-32-167.us-west-2.compute.internal=159449}
+01:13:13 processed=375709 rate=11362/s lag avg=0ms max=15ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2641 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=187854, ip-172-31-32-167.us-west-2.compute.internal=187855}
+01:13:18 processed=431915 rate=11241/s lag avg=0ms max=13ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2754 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=215957, ip-172-31-32-167.us-west-2.compute.internal=215958}
+01:13:23 processed=489244 rate=11465/s lag avg=0ms max=14ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2865 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=244622, ip-172-31-32-167.us-west-2.compute.internal=244622}
+01:13:28 processed=500000 rate=2151/s lag avg=0ms max=29ms queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2883 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250000, ip-172-31-32-167.us-west-2.compute.internal=250000}
+01:13:33 processed=500000 rate=0/s lag - queued=0 threads=10 duplicates=0 rejected=0 broadcasts=2883 broadcastFailures=0 perServer={ip-172-31-35-210.us-west-2.compute.internal=250000, ip-172-31-32-167.us-west-2.compute.internal=250000}
